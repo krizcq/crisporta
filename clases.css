@@ -1,0 +1,97 @@
+/* Reset básico*/
+body {
+    margin: 0;
+    font-family: montserrat, sans-serif;
+    background-color: #009898;
+    color: #000000;
+}
+
+/* Header */
+header {
+    background-color: #006969;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* nav */
+nav {
+    background-color: #00fff2;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+}
+
+/* nav para a */
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+/* Contenedor Principal */
+section {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+/* clases de estilo en general de las secciones */
+.izquierda,
+.centro,
+.derecha {
+    padding: 20px;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+/* seccion izquierda */
+.izquierda {
+    flex: 1;
+    background-color: rgba(255, 255, 255, 0.23);
+}
+
+/* seccion central */
+.centro {
+    flex: 2;
+    background-color: rbg(215, 200, 154);
+    box-shadow: 0 2px 5px #fcfcfc;
+}
+
+/* seccion derecha */
+.derecha {
+    flex: 1;
+    background-color: rgba(255, 255, 255, 0.23);
+}
+
+/* iframe del centro */
+iframe {
+    width: 100%;
+    height: 700px;
+    border: none;
+    border-radius: 8px;
+}
+
+/* footer */
+footer {
+    background-color: #000c0b;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* diseño rerposive */
+@media (max-width: 768px) {
+    .izquierda,
+    .centro,
+    .derecha {
+        flex: 1 1 100%;
+        margin-bottom: 5px;
+    }
+}
